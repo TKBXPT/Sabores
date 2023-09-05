@@ -1,24 +1,23 @@
 /* Carrusel.css */
 .carrusel-container {
-    max-width: 80%;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 2rem 8rem;
   }
   
   .carrusel-item {
-    padding-bottom: 5rem !important;
     display: flex;
     flex-direction: column; 
     align-items: center;
-    height: 450px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 3rem;
   }
   
   .carrusel-item img {
     
-    width: 100%;
-    height: auto;
+    max-height: 500px;
+    
     border-bottom: 10px solid transparent; 
   }
   
@@ -26,14 +25,47 @@
   .carousel.carousel-slider .control-dots .dot {
     width: 10px;
     height: 10px;
-    margin: 0 5px;
-    background: #ccc;
-    border: none;
     border-radius: 50%;
-    opacity: 0.5;
+    opacity: 0.9;
+    
     transition: opacity 0.15s ease-in-out;
   }
   
   .carousel.carousel-slider .control-dots .dot.selected {
     opacity: 1;
   }
+  .button-chico {
+    display: none; 
+  }
+  @media screen and (max-width: 1366px) {
+    .carrusel-container {
+    margin: 0rem 3rem;
+    }
+}
+@media screen and (max-width: 768px) {
+  .carrusel-container {
+  margin: 0rem 0rem;
+  }
+  .carrusel-container {
+    margin: 0rem 0rem;
+  }
+
+  .button-chico {
+    display: block; 
+    margin: 1rem auto; 
+    background-color: #4e4e43;
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .button-chico:hover {
+    background-color: #383838;
+  }
+.button-chico a {
+    color: #fffcf8;
+    text-decoration: none; 
+  }
+}
+

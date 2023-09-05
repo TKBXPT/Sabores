@@ -3,27 +3,33 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer-container">
-      <div className="column">
-        <h2>Redes Sociales</h2>
-        <a href="">Facebook</a>
-        <a href="">Instagram</a>
-        <a href="">Twitter</a>
+    <footer className="contenedor-footer">
+      <div className="columna">
+        <h4>Redes Sociales</h4>
+        <div>
+          <a href="https://www.facebook.com/panaderia.sabores.mercedes">Facebook</a>
+          <a href="https://www.instagram.com/panaderiasabores/">Instagram</a>
+        </div>
       </div>
-      <div className="column">
-        <h2>Envios</h2>
-        <p>Moto</p>
+      <div className="columna">
+        <h4>Envios</h4>
+        <div>
+          <p>Moto</p>
+        </div>
       </div>
-      <div className="column">
-        <h2>Informacion</h2>
-        <a href="">Menu</a>
-        <a href="">Contacto</a>
-        <a href="">Quienes somos</a>
-        
+      <div className="columna">
+        <h4>Informacion</h4>
+        <div>
+          <a href="#Menu">Menu</a>
+          <a href="#Contacto">Contacto</a>
+          <a href="#Quienes-Somos">Quienes somos</a>
+        </div>
       </div>
-      <div className="column">
-        <h2>Phone</h2>
-        
+      <div className="columna">
+        <h4>Teléfono</h4>
+        <div>
+        <p>(02324)50-4887</p>
+        </div>
       </div>
     </footer>
   );

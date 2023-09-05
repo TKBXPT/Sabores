@@ -1,27 +1,47 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import './Header.css';
+import logo from '../../assets/logo.svg';
+import barsIcon from '../../assets/bars-solid.svg';
+import xIcon from '../../assets/x-solid.svg';
 
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
   return (
-    <header>
-      <nav className="navbar">
-      <div className="nav-section" onClick={() => setActiveSection('columnas')}>
-  Quienes somos
-</div>
-<div className="nav-section" onClick={() => setActiveSection('carrusel')}>
-  Home
-</div>
-        <div className="nav-logo">
-          <a href="/">Logo</a>
+    <nav>
+        <div className="navbar-container" id='Menu'>
+        <button className={`menu-button ${showMenu ? 'hide' : ''}`} onClick={toggleMenu}>
+          <img src={barsIcon} alt="Menú" className="menu-icon" />
+        </button>
+        <button className={`close-button ${showMenu ? '' : 'hide'}`} onClick={toggleMenu}>
+          <img src={xIcon} alt="Cerrar" className="close-icon" />
+        </button>
+        <div className={`navbar-list ${showMenu ? 'show' : ''}`} id="Menu">
+          <ul className="navbar-left">
+            <li>
+              <p><a href="/">Inicio</a></p>
+            </li>
+            <li>
+              <p><a href="#Quienes-Somos">Quienes Somos</a></p>
+            </li>
+          </ul>
+          <div className="navbar-logo">
+            <img src={logo} alt="Logo" />
+          </div>
+          <ul className="navbar-right">
+            <li>
+              <p><a href="#Ofertas">Ofertas</a></p>
+            </li>
+            <li>
+              <p><a href="#Sucursales">Sucursales</a></p>
+            </li>
+          </ul>
         </div>
-        <div className="nav-section" onClick={() => setActiveSection('ofertas')}>
-  Ofertas
-</div>
-<div className="nav-section" onClick={() => setActiveSection('sucursales')}>
-  Sucursales
-</div>
-      </nav>
-    </header>
+      </div>
+    </nav>
   );
 };
 

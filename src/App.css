@@ -1,5 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Xanh+Mono:ital@0;1&display=swap'); 
 body {
+    font-family: 'Xanh Mono', monospace;
     background-color: #fffcf8;
+    color: #383838;
     margin: 0;
     padding: 0;
   }
+    p {
+      
+      font-size: 24px;
+    }
+    
+    h1 {
+      font-family: 'Gwendolyn', cursive;
+      font-size: 77px;
+    }
+    
+    h2 {
+      font-family: 'Gwendolyn', cursive;
+      font-size: 55px;
+    }
+    
+    h3 {
+      
+      font-size: 40px;
+    }
+    h4 {
+      
+      font-size: 30px;
+    }
+    h5 {
+      
+      font-size: 28px;
+    }

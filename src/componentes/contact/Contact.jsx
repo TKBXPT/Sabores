@@ -23,7 +23,7 @@ const Contact = () => {
       <h2>Contactanos</h2>
       <form action="" onSubmit={handleForm}>
         <div className="form-group">
-          <label>Nombre:</label>
+          <label><h3>Nombre:</h3></label>
           <input type="text" name='name' value={values.name} onChange={handleInputChange} />
         </div>
         <div className="form-group">

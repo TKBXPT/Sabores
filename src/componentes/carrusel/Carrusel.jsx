@@ -19,6 +19,7 @@ const Carrusel = () => {
           </div>
         ))}
       </Carousel>
+      <button className="button-chico"> <a href="#Contacto">CONTACTANOS</a></button>
     </div>
   );
 };

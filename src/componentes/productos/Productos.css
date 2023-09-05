@@ -1,20 +1,20 @@
 .productos-container {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 5rem 5rem;
+  align-items: center;
+  padding: 3rem;
 }
 
 .producto-item {
   position: relative;
   flex: 1;
   text-align: center;
-  margin: 0 50px;
+  margin: 0 2rem;
 }
 
 .producto-item img {
-  max-width: 90%;
+  max-width: 350px;
   height: auto;
 }
 
@@ -37,4 +37,22 @@
 
 .producto-item:hover .producto-overlay {
   opacity: 1; 
+}
+@media screen and (max-width: 1366px) {
+
+  .productos-container {
+    flex-direction: column;
+  }
+
+.productos-container {
+  margin: 0;
+  padding: 0;
+}
+}
+
+@media screen and (max-width: 968px) {
+  .producto-overlay h2{
+    font-size: 50px;
+    
+  }
 }

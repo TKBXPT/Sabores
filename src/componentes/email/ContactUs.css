@@ -1,0 +1,66 @@
+.contenedor-contacto{
+  text-align: center;
+  margin: 8rem;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="subjet"],
+  textarea {
+    width: 80%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+  input[type="submit"] {
+    background-color: #4e4e43;
+    color: #fffcf8;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #383838;
+  }
+  @media screen and (max-width: 768px) {
+    .contenedor-contacto {
+      margin: 2rem;
+    }
+    
+    form {
+      max-width: 100%;
+      padding: 1rem;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 80%;
+      margin-bottom: 1rem;
+    }
+    
+    input[type="submit"] {
+      margin-top: 1rem;
+    }
+  }

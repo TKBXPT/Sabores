@@ -18,9 +18,9 @@ const Ofertas = () => {
   };
 
   return (
-    <div className="galeria-container">
+    <div className="galeria-container" id="Ofertas">
+      <h1>Ofertas Especiales</h1>
       <div className="gallery">
-        {/* Imagen previa */}
         <div className="image-container">
           <img src={images[(selectedImageIndex + images.length - 1) % images.length]} alt={`Imagen ${selectedImageIndex}`} />
           <p>{imageTexts[(selectedImageIndex + images.length - 1) % images.length]}</p>

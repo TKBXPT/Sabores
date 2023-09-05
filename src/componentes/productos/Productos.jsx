@@ -8,21 +8,21 @@ const Productos = () => {
     return (
       <div className="productos-container">
         <div className="producto-item">
-          <img src={medialunas} alt="Panificados" width="250%"/>
+          <img src={medialunas} alt="Panificados"/>
           <div className="producto-overlay">
-            <span>Panificados</span>
+            <h2>Panificados</h2>
           </div>
         </div>
         <div className="producto-item">
-          <img src={sandwich} alt="Sandwich" width="250%"/>
+          <img src={sandwich} alt="Sandwich"/>
           <div className="producto-overlay">
-            <span>Sandwich</span>
+            <h2>Sandwiches</h2>
           </div>
         </div>
         <div className="producto-item">
-          <img src={torta} alt="Torta" width="250%"/>
+          <img src={torta} alt="Torta"/>
           <div className="producto-overlay">
-            <span>Torta</span>
+            <h2>Tortas</h2>
           </div>
         </div>
       </div>
