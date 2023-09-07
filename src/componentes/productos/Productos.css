@@ -10,7 +10,7 @@
   position: relative;
   flex: 1;
   text-align: center;
-  margin: 0 2rem;
+
 }
 
 .producto-item img {
@@ -41,8 +41,8 @@
 @media screen and (max-width: 1366px) {
 
 .productos-container {
-  margin: 2rem;
-  padding: 0 2rem;
+  margin: 0;
+  padding: 0;
 }
 .producto-item img {
   max-width: 300px;
@@ -58,4 +58,5 @@
   .productos-container {
     flex-direction: column;
   }
+
 }

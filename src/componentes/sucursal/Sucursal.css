@@ -20,7 +20,7 @@
 }
 
 .contenedor-imagen-sucursal img {
-  margin-top: 1rem;
+  margin: 0 1rem;
   max-width: none;
   height: auto;
   width: 100%;
@@ -44,11 +44,11 @@
   }
   .contendor-texto h1{
     margin: 0;
-    font-size: 60px;
+    font-size: 50px;
     
   }
   .contendor-texto h3{
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -69,7 +69,11 @@
   .contenedor-imagen-sucursal {
     display: none;
   }
-}
+
 .contendor-texto p{
   font-size: 20px;
+}
+.contendor-texto h1{
+  font-size: 35px;
+}
 }
