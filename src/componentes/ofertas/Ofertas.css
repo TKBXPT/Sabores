@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* margin: 8rem 20rem;  */
+  margin: 2rem 10rem; 
   max-width: 100%; 
 }
 
@@ -11,7 +11,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5rem;
   position: relative;
 }
 
@@ -46,9 +45,9 @@
   background-color: #383838;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1366px) {
   .image-container img {
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
   }
   .arrow {
@@ -64,5 +63,9 @@
  h1{
   text-align: center;
  }
+ .galeria-container {
+  margin: 0; 
+
+}
   
 }

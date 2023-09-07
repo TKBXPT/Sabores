@@ -65,8 +65,8 @@ margin: 0;
 .close-button {
 display: none;
 position: absolute;
-top: 2rem;
-right: 2rem;
+top: .5rem;
+right: .5rem;
 
 }
 
@@ -76,7 +76,7 @@ width: 24px;
 height: auto;
 cursor: pointer;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1366px) {
   .navbar-left,
   .navbar-right {
   gap: 1;
@@ -94,12 +94,14 @@ margin: 0rem 1rem;
 
   }
 
+
   .navbar-left, .navbar-right {
     display: none;
     flex:1;
     text-align: center;
     margin: 0 0;
   }
+  
   .menu-button {
     display: block;
   }
@@ -122,7 +124,7 @@ margin: 0rem 1rem;
   }
   .navbar-left li p,
 .navbar-right li p{
-  font-size: 20px;
+  font-size: 1rem;
 
 }
 }

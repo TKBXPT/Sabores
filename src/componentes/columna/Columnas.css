@@ -2,11 +2,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    margin: 5rem 10rem;
+    margin: 2rem 10rem;
 
 }
 .columna-item{
-  padding: 5rem;
+  padding: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
 }
 .columna-texto{
     text-align: right;
-    padding: 5rem;
+    padding: 3rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -31,7 +31,7 @@
 .contact-button {
     background-color: #4e4e43;
     border: none;
-    padding: 1rem 1rem;
+    padding: 1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -45,9 +45,9 @@
     text-decoration: none; 
   }
 
-  @media screen and (max-width: 1366px) {
+@media screen and (max-width: 1366px) {
     .columnas-container{
-      margin: 0 0;
+      margin: 2rem;
   }
 }
 @media screen and (max-width: 1080px){
@@ -56,9 +56,13 @@
 }
 .columna-texto{
   order: 1;
+  padding: 0;
 }
 .columna-item{
   order: 2; 
   display: none;
+}
+.columna-texto h1{
+  font-size: 65px;
 }
 }

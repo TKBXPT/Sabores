@@ -39,15 +39,12 @@
   }
   @media screen and (max-width: 1366px) {
     .carrusel-container {
-    margin: 0rem 3rem;
+    margin: 2rem 3rem;
     }
 }
 @media screen and (max-width: 768px) {
   .carrusel-container {
-  margin: 0rem 0rem;
-  }
-  .carrusel-container {
-    margin: 0rem 0rem;
+  margin: 2rem 0rem;
   }
 
   .button-chico {

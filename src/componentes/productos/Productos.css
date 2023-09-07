@@ -1,7 +1,7 @@
 .productos-container {
   display: flex;
   justify-content: space-between;
-  margin: 5rem 5rem;
+  margin: 2rem 5rem;
   align-items: center;
   padding: 3rem;
 }
@@ -40,13 +40,13 @@
 }
 @media screen and (max-width: 1366px) {
 
-  .productos-container {
-    flex-direction: column;
-  }
-
 .productos-container {
-  margin: 0;
-  padding: 0;
+  margin: 2rem;
+  padding: 0 2rem;
+}
+.producto-item img {
+  max-width: 300px;
+  height: auto;
 }
 }
 
@@ -54,5 +54,8 @@
   .producto-overlay h2{
     font-size: 50px;
     
+  }
+  .productos-container {
+    flex-direction: column;
   }
 }
